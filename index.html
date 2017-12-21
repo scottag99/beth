@@ -32,6 +32,13 @@
         flex-wrap: wrap;
       }
       #services li {padding-right: 1.2em}
+
+      #services-list  {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+      }
+
     </style>
 
   </head>
@@ -55,17 +62,19 @@
             <h2>Bookkeeping and Financial Services</h2>
             <p>I provide bookkeeping and financial services to businesses in Spring, The Woodlands, Houston, and beyond. Running your business is hard, and bookkeeping can seem daunting. I love to help entreprenuers and small business owners get organized so they have a clear picture on the financial health of their business.</p>
             <h3>Services</h3>
-            <ul id="services">
-              <li>Bookkeeping</li>
-              <li>Quickbooks setup</li>
-              <li>Financial reporting</li>
-              <li>Payroll</li>
-              <li>Reporting for tax preparers</li>
-              <li>Planning and budgeting</li>
-              <li>Cash flow analysis and forecasting</li>
-              <li>Internal controls implementations</li>
-              <li>Cost analysis</li>
-            </ul>
+            <div id="services-list">
+              <ul>
+                <li>Bookkeeping</li>
+                <li>Quickbooks setup</li>
+                <li>Financial reporting</li>
+                <li>Payroll</li>
+                <li>Reporting for tax preparers</li>
+                <li>Planning and budgeting</li>
+                <li>Cash flow analysis and forecasting</li>
+                <li>Internal controls implementations</li>
+                <li>Cost analysis</li>
+              </ul>
+            </div>
             <h3>Contact</h3>
             <p>&#9993; <a href="mailto:beth@eastevenson.consulting">beth@eastevenson.consulting</a></p>
             <form role="form" id="contactForm" data-toggle="validator" method="POST" action="http://formspree.io/beth@eastevenson.consulting">
