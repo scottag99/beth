@@ -23,7 +23,15 @@
         margin-top: 2em;
         opacity: .90;
         border-radius: 25px;}
+        h1 {text-align: center; letter-spacing: 2px;}
       h1,h2,h3,h4,h5,h6 { font-family: 'Marcellus SC', serif; }
+      #services {
+        height: 100px;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      #services li {padding-right: 1.2em}
     </style>
 
   </head>
@@ -34,21 +42,56 @@
         <div class="col-sm-4">
           <div class="content">
             <h1>Beth Stevenson</h1>
-            <img width="240" height="360" />
-            <h4>Contact</h4>
-            P: 713-504-2490<br />
-            E: <a href="mailto:bethstevenson@gmail.com">bethstevenson@gmail.com</a>
+            <div id="portrait">
+              <img class="img-responsive" src="IMG_4888.JPG" />
+            </div>
+            <h3>About Me</h3>
+            <p>I received both my Bachelors and Masters in Accounting from Texas A&amp;M University while a member of their prestigious Fellows program. I have experience in public accounting during my time at <strong>PriceWaterhouseCoopers</strong> and private accounting while doing consulting and working in the oil and gas industry for <strong>Koch</strong> and <strong>Kinder Morgan</strong>.</p>
+
           </div>
         </div>
         <div class="col-sm-8">
           <div class="content">
             <h2>Bookkeeping and Financial Services</h2>
-            <p>I provide bookkeeping and financial services to local businesses and beyond. Running your business is hard, and bookkeeping can seem daunting. I love to help entreprenuers and small business owners get organized so they have a clear picture on the financial health of their business.</p>
-            <h3>Qualified</h3>
-            <p>I received both my Bachelors and Masters in Accounting from Texas A&amp;M University while a member of their prestigious Fellows program. I have experience in public accounting during my time at <strong>PriceWaterhouseCoopers</strong> and private accounting while doing consulting and working in the oil and gas industry for <strong>Koch</strong> and <strong>Kinder Morgan</strong>.</p>
-            <h3>Testimonials</h3>
+            <p>I provide bookkeeping and financial services to businesses in Spring, The Woodlands, Houston, and beyond. Running your business is hard, and bookkeeping can seem daunting. I love to help entreprenuers and small business owners get organized so they have a clear picture on the financial health of their business.</p>
+            <h3>Services</h3>
+            <ul id="services">
+              <li>Bookkeeping</li>
+              <li>Quickbooks setup</li>
+              <li>Financial reporting</li>
+              <li>Payroll</li>
+              <li>Reporting for tax preparers</li>
+              <li>Planning and budgeting</li>
+              <li>Cash flow analysis and forecasting</li>
+              <li>Internal controls implementations</li>
+              <li>Cost analysis</li>
+            </ul>
+            <h3>Contact</h3>
+            <p>&#9993; <a href="mailto:beth@eastevenson.consulting">beth@eastevenson.consulting</a></p>
+            <form role="form" id="contactForm" data-toggle="validator" method="POST" action="http://formspree.io/beth@eastevenson.consulting">
+              <input type="text" style="display: none;" name="_gotcha" />
+              <input type="hidden" name="_subject" value="Website Contact Request" />
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" placeholder="Enter name" required data-error="NEW ERROR MESSAGE">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" name="email" placeholder="Enter email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+              </div>
+
+              <button type="submit" id="form-submit" class="btn btn-default btn-3">Submit</button>
+              <div class="clearfix"></div>
+            </form>
+            <!--h3>Testimonials</h3>
             <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet tristique euismod. Nunc arcu augue, volutpat eget ultrices ut, auctor in leo. Ut aliquam tellus et nunc euismod vulputate. Nunc a tortor semper lorem fermentum tincidunt.</blockquote>
-            <blockquote>Aliquam rhoncus, tellus eu mattis auctor, nulla dolor eleifend justo, vel mattis eros nunc a eros.</blockquote>
+            <blockquote>Aliquam rhoncus, tellus eu mattis auctor, nulla dolor eleifend justo, vel mattis eros nunc a eros.</blockquote-->
           </div>
         </div>
       </div>
